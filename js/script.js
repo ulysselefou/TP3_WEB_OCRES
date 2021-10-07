@@ -16,13 +16,14 @@ function start() {
       const description = data.weather[0].description;
       const temp = data.main.temp;
       const icon = apiWeather.getHTMLElementFromIcon(data.weather[0].icon);
-
+      const city =            getElementFromCountriesData
       // Modifier le DOM
       document.getElementById('today-forecast-main').innerHTML = main;
       document.getElementById('today-forecast-more-info').innerHTML = description;
       document.getElementById('icon-weather-container').innerHTML = icon;
       document.getElementById('today-forecast-temp').innerHTML = `${temp}°C`;
-      
+      document.getElementById('').innerHTML = 
+
     })
     .catch(function(error) {
       // Affiche une erreur
